@@ -18,11 +18,13 @@ throw new IllegalArgumentException("不正：合計が" + MAX + "超");
 quantityが一定量より多いかの判定ロジックをisDiscountableに閉じ込めるなら、  
 isDiscountableはフィールド（プロパティ）ではなくメソッドになるのでは？
 
-■修正前
+■修正前  
 if(quantity.isDiscountable)
 
-■修正後
+■修正後  
 if(quantity.isDiscountable())
+
+→　正誤表に反映いただいた。
 
 ### ■P.43 Customersクラスのaddメソッド  
 コードリストで、Customersコンストラクタの引数にresult.add(customer)を指定しているが、  
@@ -43,3 +45,5 @@ staticブロック内のtypes.putをするタイミングでNullPointerException
 
 ■修正後  (staticブロックの先頭でMapのインスタンスを作成する)  
 types = new HashMap<String, Fee>();
+
+→　正誤表に反映いただいた。
